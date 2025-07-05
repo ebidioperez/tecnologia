@@ -1,0 +1,146 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+}
+
+/* Menú */
+.menu {
+  background-color: #222;
+}
+
+.menu ul {
+  display: flex;
+  list-style: none;
+  justify-content: center;
+  padding: 10px 0;
+}
+
+.menu li {
+  margin: 0 20px;
+}
+
+.menu a {
+  color: white;
+  text-decoration: none;
+  padding: 8px 12px;
+  display: block;
+}
+
+.menu a:hover {
+  background-color: #444;
+  border-radius: 5px;
+}
+
+/* Contenedor general */
+.contenedor {
+  border: 5px solid red;
+  width: 80%;
+  margin: 20px auto;
+  padding: 10px;
+}
+
+/* Superior */
+.superior {
+  display: flex;
+  border: 2px solid blue;
+  margin-bottom: 10px;
+}
+
+.izquierda {
+  flex: 2;
+  height: 150px;
+  border: 2px solid green;
+  margin-right: 10px;
+}
+
+.derecha {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.arriba, .abajo {
+  height: 70px;
+  border: 2px solid green;
+}
+
+/* Línea horizontal */
+.horizontal {
+  height: 30px;
+  border: 2px solid blue;
+  margin-bottom: 10px;
+}
+
+/* Inferior */
+.inferior {
+  display: flex;
+  border: 2px solid blue;
+  gap: 10px;
+}
+
+.inferior .columna {
+  border: 2px solid green;
+  height: 150px;
+}
+
+.inferior .izquierda,
+.inferior .derecha {
+  flex: 1;
+}
+
+.inferior .centro {
+  flex: 2;
+}
+
+/* Pie de página */
+.pie {
+  background-color: #222;
+  color: white;
+  text-align: center;
+  padding: 15px;
+  margin-top: 20px;
+}
+/* Video separado */
+.video-container {
+  margin-bottom: 20px;
+}
+
+/* Viñeta tipo cuadrado (■) */
+ul.custom-list li.square::before {
+  content: "■";
+  position: absolute;
+  left: 0;
+  color: #000;
+}
+
+/* Viñeta tipo círculo vacío (○) */
+ul.custom-list li.circle::before {
+  content: "○";
+  position: absolute;
+  left: 0;
+  color: #000;
+}
+
+/* Viñeta tipo disco lleno (●) */
+ul.custom-list li.disc::before {
+  content: "●";
+  position: absolute;
+  left: 0;
+  color: #000;
+}
+
+/* Sin viñeta */
+ul.custom-list li.none::before {
+  content: "";
+}
+
+h1 {
+  color: orange;
+  background-color: black;
+}
